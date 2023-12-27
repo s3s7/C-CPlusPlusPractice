@@ -2,6 +2,7 @@
 #include <stdlib.h>
 int keisan (int kingaku);
 int fruits (int apple);
+void kei(int a,int b,int *c,int *d);
 
 int main(void){
     // printf("hello\n ho");
@@ -25,10 +26,22 @@ int main(void){
 // hoge = fruits(10);
 // printf("計算されたのは%d",hoge);
 
-char str [3]={'J','o','\0'};
-printf("計%s",str);
+// char str [3]={'J','o','\0'};
+// printf("計%s",str);
 
-char str[] = "256";
+// char str[] = "256";
+// int suuti = atoi(str);
+// printf("%d",suuti);
+
+int *p,i;
+p= &i;
+*p=15;
+printf("%d",i);
+printf("%d",*p);
+
+
+kei(i,2,3,4);
+printf("%d",i);
 
 
 // main関数終了
@@ -50,7 +63,10 @@ int fruits(int apple){
 int kingaku;
 kingaku = apple * 300;
 return kingaku;
-
 }
 
+void kei(int a,int b,int *c,int*d){
+    *c = a + b;
+    *d = a-b;
+}
 

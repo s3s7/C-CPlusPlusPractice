@@ -1,5 +1,9 @@
-#include<stdio.h>
+#include <iostream>
+#include <stdio.h>
 
-int main(void){
-    ruturn 0;
+int main()
+{
+  std::cout << "Hello World!" << std::endl;
+  printf("Heoo");
+  return 0;
 }
