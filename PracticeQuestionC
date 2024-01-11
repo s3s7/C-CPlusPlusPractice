@@ -43,7 +43,8 @@ printf("%d",*p);
 kei(i,2,3,4);
 printf("%d",i);
 
-
+// 覚えるC言語練習問題19
+// 入力終了処理
 if(age = -1) {
     break;
 }
@@ -56,13 +57,19 @@ if(age = -1) {
 
 struct iro{
   char name;
-  char sex;
   int age;
+  char sex;
+  
 
 }
-{
-    /* data */
-};
+
+// データの入力と表示はそれぞれ専用の関数
+int inputdata(void){
+scanf("名前は%d、年齢は%s、性別は%s",&name,&age,&sex)
+
+return 0;
+}
+
 
 
 int keisan (int kingaku){
