@@ -51,3 +51,7 @@ int main()
 
     return 0;
 }
+
+typedef tes{
+    char[10] name;
+}
