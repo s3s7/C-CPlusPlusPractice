@@ -44,6 +44,7 @@ kei(i,2,3,4);
 printf("%d",i);
 
 
+入力終了処理
 if(age = -1) {
     break;
 }
