@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-void inputdata(char *name,int *age,char *sex);
-
 
  typedef struct 
  {
@@ -11,22 +9,27 @@ void inputdata(char *name,int *age,char *sex);
 
 }iro;
 
+
+
+void inputdata(iro *o);
+void show(iro r);
+
 int main(void){
   
 iro ir;
-
+iro data[3];
 // int *p,i;
 // p= &i;
 // *p=15;
 // printf("%d",i);
 // printf("%d",*p);
+int i;
+for(i = 0; i<2;i++){
+inputdata(&data);
+}
+char na;
 
-
-char na,se;
-int a;
-char b;
-inputdata(&na,&a,&se);
-show(b);
+show(data);
 
 
 // 覚えるC言語練習問題19
@@ -43,18 +46,20 @@ show(b);
 
 
 // データの入力専用の関数
-void inputdata(char *name,int *age,char *sex){
-iro r;
-scanf("%s、%d、%s",iro->name, &age, &sex);
-
+void inputdata(iro *o){
+// iro r;
+int i;
+for(i = 0; i<2;i++){
+scanf("%s、%d、%d",o->name, o->age, o->sex);
+}
 return ;
 }
 
 void show(iro r){
     // データの表示専用の関数
- printf("名前%s、年齢%d、性別%s",iro.name,ir.age,ir.sex);
-
-
+ printf("1名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
+ printf("2名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
+ printf("3名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
     return ;
 }
 
