@@ -16,29 +16,37 @@ void show(iro r);
 
 int main(void){
   
-iro ir;
-iro data[3];
+int i,count;
+iro* data;
 // int *p,i;
 // p= &i;
 // *p=15;
 // printf("%d",i);
 // printf("%d",*p);
-int i;
-for(i = 0; i<2;i++){
-inputdata(&data);
-}
-char na;
+count = 0;
 
+for(i = 0; ;i++){
+inputdata(&data);
+count++;
+data = (iro*)malloc(sizeof((iro)  * 10));
+
+if(data->age = -1) {
+    break;
+}
+}
+
+
+
+
+for(i = 0; i < count;i++){
 show(data);
 
-
+}
 // 覚えるC言語練習問題19
-// 入力終了処理
-// if(age = -1) {
-//     break;
-// }
 
 
+
+free(data);
 
 // main関数終了
     return 0;
@@ -56,10 +64,10 @@ return ;
 }
 
 void show(iro r){
+    char datas[3];
     // データの表示専用の関数
- printf("1名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
- printf("2名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
- printf("3名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
+ printf("名前%s、年齢%d、性別%d",r.name,r.age,r.sex);
+
     return ;
 }
 
