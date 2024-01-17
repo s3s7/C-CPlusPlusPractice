@@ -54,4 +54,4 @@ int main()
 
 typedef tes{
     char[10] name;
-}
+};
